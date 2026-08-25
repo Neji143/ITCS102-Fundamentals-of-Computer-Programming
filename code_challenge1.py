@@ -1,0 +1,3 @@
+pogi = "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t*\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t*\t\t*\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t*\t\t\t\t*\n\t\t\t\t\t\t\t\t\t\t\t\t\t*\t\t\t\t\t\t*\n\t\t\t\t\t\t\t\t\t\t\t\t*\t*\t\t\t\t\t\t*\t*\n\t\t\t\t\t\t\t\t\t\t\t\t*\t*    HI! MY NAME IS NEILL GERALD C. DE ROSAS\t*\t*\n\t\t\t\t\t\t\t\t\t\t\t\t*\t*                 FROM BSIT-1B\t\t\t*\t*\n\t\t\t\t\t\t\t\t\t\t\t\t*\t*\t\t\t\t\t\t*\t*\n\t\t\t\t\t\t\t\t\t\t\t\t*\t*\t*\t*\t*\t*\t*\t*\t*\n\t\t\t\t\t\t\t\t\t\t\t\t*\t*\t*\t*\t*\t*\t*\t*\t*"
+
+print(pogi)
