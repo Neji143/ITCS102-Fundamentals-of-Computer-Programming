@@ -7,6 +7,6 @@
 # \" - insert double quotation
 
 phrase1 = "\"Can you unlove someone?\", \\you can't really unlove someone,\nyou just getting used to without having them around, \narayko"
-phrase2= "we are infinite, \ni was here"
+phrase2 = "we are infinite, \ni was here"
 
 print(phrase1)
