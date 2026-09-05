@@ -1,4 +1,5 @@
-#Assignment Operators 
+#USING OPERATORS
+
 input("Welcome to the cashier! Press enter to continue...")
 
 print()
