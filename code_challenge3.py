@@ -3,17 +3,17 @@
 name = input("SENDERS NAME: ")
 item = input("ITEM: ")
 
-fragile = input("FRAGILE?: (true if YES/false if NO): ")    
-isit_fragile = fragile == "true"
+fragile = input("FRAGILE?: (yes/no): ")    
+isit_fragile = fragile == "yes"
 
 weight = float(input("WEIGHT: (in kg): "))
 distance = float(input("DISTANCE WILL BE COVERED?: (in km): "))
 
-express = input("IS EXPRESS? (true if YES/false if NO): ")
-isit_express = express == "true"
+express = input("IS EXPRESS? (yes/no): ")
+isit_express = express == "yes"
 
-international = input("IS INTERNATIONAL? (true if YES/false if NO): ")
-isit_international = international == "true"
+international = input("IS INTERNATIONAL? (yes/no): ")
+isit_international = international == "yes"
 
 base_cost = (weight * 2.50) + (distance * 0.15)
 
