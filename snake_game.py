@@ -1,6 +1,6 @@
 # ============================================================
-# SNAKE GAME (pygame)
-# Arrow keys or WASD to move. Eat red food, avoid purple poison & rocks!
+# SNAKE GAME 
+# Arrow keys or WASD to move. Eat red food, avoid purple poison & rocks
 # P = pause, R = play again, Q = quit
 # ============================================================
 import random
@@ -11,20 +11,20 @@ import pygame
 # ============================================================
 GAME_TITLE = "Neill's Snake"
 CELL_SIZE = 25          # size of one square, in pixels
-GRID_WIDTH = 24         # how many squares across
-GRID_HEIGHT = 18        # how many squares down
+GRID_WIDTH = 20        # how many squares across
+GRID_HEIGHT = 20        # how many squares down
 INITIAL_SPEED = 10      # starting speed
 START_LENGTH = 3        # how long the snake is at the start
 POINTS_PER_FOOD = 1     # score for each food eaten
 GROW_PER_FOOD = 1       # how many squares the snake grows per food
-WALLS_KILL = True       # False = snake goes through walls to the other side
+WALLS_KILL = False      # False = snake goes through walls to the other side
 
 # Colors are (red, green, blue), each from 0 to 255
-BACKGROUND_COLOR = (20, 24, 38)
+BACKGROUND_COLOR = (154, 205, 50)
 GRID_COLOR = (32, 38, 56)
-SNAKE_COLOR = (255, 200, 0)
-HEAD_COLOR = (100, 250, 90)
-FOOD_COLOR = (235, 80, 80)
+SNAKE_COLOR = (255, 204, 203)
+HEAD_COLOR = (165, 42, 42)
+FOOD_COLOR = (255, 140, 0)
 POISON_COLOR = (180, 70, 255)
 TEXT_COLOR = (240, 240, 240)
 ROCK_COLOR = (130, 130, 140)
@@ -173,21 +173,20 @@ while running:
                 food = get_empty_spot(snake + rocks + [poison])
                 poison = get_empty_spot(snake + rocks + [food])
 
-            elif new_head == poison:                    # ate purple poison food
+            elif new_head == poison:                    
                 score = max(0, score - 2)
                 poison = get_empty_spot(snake + rocks + [food])
                 if len(snake) > 2:
-                    snake.pop()                         # shrink extra segment
+                    snake.pop()                         
                 else:
-                    game_over = True                    # too short to survive poison
+                    game_over = True                    
 
             if grow > 0:
-                grow = grow - 1                         # keep the tail: snake grows
+                grow = grow - 1                         
             else:
                 if len(snake) > 1:
-                    snake.pop()                         # remove the tail: same length
+                    snake.pop()                         
 
-    # ---- 3. DRAW: paint the new frame ----
     if score > high_score:
         high_score = score
 
